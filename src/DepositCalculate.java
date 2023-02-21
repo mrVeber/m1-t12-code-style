@@ -5,7 +5,7 @@ public class DepositCalculate {
 
         double pay = amount * Math.pow((1 + yearRate / 12), 12 * depositPeriod);
         return calculationCircle(pay, 2);
-  }
+    }
 
     double calculateSimplePercent(double amount, double yearRate, int depositPeriod) {
 
@@ -16,7 +16,7 @@ public class DepositCalculate {
 
         double scale = Math.pow(10, square);
         return Math.round(value * scale) / scale;
-}
+    }
 
     void printMenu() {
 
@@ -32,7 +32,7 @@ public class DepositCalculate {
 
         System.out.println("Выберите тип вклада, 1 - вклад с обычным процентом, 2 - вклад с капитализацией:");
         userChoise = scanner.nextInt();
-        
+
         double result = 0;
 
             if (userChoise == 1) {
